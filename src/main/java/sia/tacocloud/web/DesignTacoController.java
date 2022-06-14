@@ -2,7 +2,6 @@ package sia.tacocloud.web;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,9 +10,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import lombok.extern.slf4j.Slf4j;
-import sia.tacocloud.Ingredient;
-import sia.tacocloud.Ingredient.Type;
-import sia.tacocloud.Taco;
+import sia.tacocloud.data.Ingredient;
+import sia.tacocloud.data.Ingredient.Type;
+import sia.tacocloud.data.Taco;
 
 import javax.validation.Valid;
 
