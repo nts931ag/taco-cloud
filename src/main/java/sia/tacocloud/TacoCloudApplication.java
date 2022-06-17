@@ -10,7 +10,7 @@ import sia.tacocloud.data.IngredientRepository;
 import sia.tacocloud.Ingredient.Type;
 
 @SpringBootApplication
-public class TacoCloudApplication implements WebMvcConfigurer {
+public class TacoCloudApplication{
 
 	public static void main(String[] args) {
 		SpringApplication.run(TacoCloudApplication.class, args);
@@ -35,8 +35,4 @@ public class TacoCloudApplication implements WebMvcConfigurer {
 		};
 	}
 
-	@Override
-	public void addViewControllers(ViewControllerRegistry registry) {
-		registry.addViewController("/").setViewName("home");
-	}
 }
